@@ -1,3 +1,5 @@
+package com.example.modelo;
+
 public class Tecnico extends Persona {
     private String especialidad;
 
