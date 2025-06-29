@@ -1,1 +1,20 @@
+public class Tecnico extends Persona {
+    private String especialidad;
 
+    public Tecnico(String identificacion, String nombre, String telefono, String especialidad) {
+        super(identificacion, nombre, telefono);
+        this.especialidad = especialidad;
+}
+
+ public String getEspecialidad() {
+        return especialidad;
+ }
+ 
+
+ public void setEspecialidad(String especialidad) {
+        this.especialidad = especialidad;
+ }
+
+public String mostrarInformacionCompleta() {
+        return "Tecnico:" + super.toString() + "Especialidad: " + especialidad;
+    }

@@ -30,5 +30,5 @@ public String mostrarAtencionT() {
 }
 
 public String toString() {
-        return "AtencionTecnico{" + "fecha='" + fechaT + '\'' +", tecnico=" + tecnico.getNombre() +
+        return "AtencionTecnico{" + "fecha='" + fechaT +", tecnico=" + tecnico.getNombre()
 }
