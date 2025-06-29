@@ -19,5 +19,36 @@ public class OrdenServicio {
         this.total = 0;
     }
 
-    public void agregarServicio()
+     public String getIdentificacionCliente() {
+        return identificacionCliente;
+    }
+
+    public String getFechaServicio() {
+        return fechaServicio;
+    }
+
+    public TipoVehiculo getTipoVehiculo() {
+        return tipoVehiculo;
+    }
+
+    public String getPlacaVehiculo() {
+        return placaVehiculo;
+    }
+
+    public List<DetalleOrden> getDetalles() {
+        return new ArrayList<>(detalles); 
+    }
+
+    public double getTotal() {
+        return total;
+    }
+
+    @Override
+    public String toString() {
+        return "Orden para cliente " + identificacionCliente + " con " + detalles.size() + " servicios - Total: $" + total;
+    }
+
+    public void agregarServicio(Servicio servicio, int cantidad){
+
+    }
 }
