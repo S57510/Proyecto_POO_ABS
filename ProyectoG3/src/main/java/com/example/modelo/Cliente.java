@@ -10,10 +10,7 @@ public class Cliente extends Persona{
     }
 
     public String toString(){
-        return "Cliente{ identificacion "+ getIndentificacion() + 
-               "\nnombre: " + getNombre() + 
-               "\ndireccion: " + getDireccion() + 
-               "\ntelefono: " + getTelefono() + 
+        return "Cliente{ "+super.toString()+ 
                "\ncliente: " + cliente + " }";
     }
 

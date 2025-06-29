@@ -9,9 +9,7 @@ public class Proovedor extends Persona{
     }
 
     public String toString(){
-        return "Proovedor{ identificacion " + getIdentificacion() + 
-               "\nnombre " + getNombre() + 
-               "\ntelefono " + getTelefono() + 
+        return "Proovedor{ "+super.toString()+ 
                "\ndescripcion " + descripcion + " }";
     }
 
