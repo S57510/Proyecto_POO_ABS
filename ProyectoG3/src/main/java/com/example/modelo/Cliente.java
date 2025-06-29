@@ -8,7 +8,7 @@ public class Cliente extends Persona{
         super(identificacion, nombre, telefono, direccion);
         this.cliente = tipoCliente;
     }
-    
+
     public String toString(){
         return "Cliente{ identificacion "+ getIndentificacion() + 
                "\nnombre " + getNombre() + 
@@ -24,5 +24,4 @@ public class Cliente extends Persona{
     public void agregarCliente(String identificacion, String nombre, String direccion, String telefono, boolean tipoCliente){
         // agregar a la lista de clientes
     }
-    
 }
