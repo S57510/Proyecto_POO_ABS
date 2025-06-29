@@ -11,10 +11,10 @@ public class Cliente extends Persona{
 
     public String toString(){
         return "Cliente{ identificacion "+ getIndentificacion() + 
-               "\nnombre " + getNombre() + 
-               "\ndireccion " + getDireccion() + 
-               "\ntelefono " + getTelefono() + 
-               "\ncliente " + cliente + " }";
+               "\nnombre: " + getNombre() + 
+               "\ndireccion: " + getDireccion() + 
+               "\ntelefono: " + getTelefono() + 
+               "\ncliente: " + cliente + " }";
     }
 
     public void mostrarDatos() {
