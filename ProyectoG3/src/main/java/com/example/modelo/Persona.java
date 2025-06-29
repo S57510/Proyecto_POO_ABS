@@ -16,5 +16,5 @@ public class Persona {
     public String getIdentificacion(){
         return identificacion;
     }
-    
+    // Setters and Getters
 }
