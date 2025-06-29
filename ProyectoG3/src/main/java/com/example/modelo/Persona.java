@@ -13,8 +13,17 @@ public class Persona {
     public String toString(){
         return  "Identificacion: " +this.identificacion+ " Nombre: " + this.nombre + " Telefono: " +this.telefono; 
     }
+
     public String getIdentificacion(){
         return identificacion;
     }
-    
+
+    public String getNombre(){
+        return nombre;
+    }
+
+    public String getTelefono(){
+        return telefono;
+    }
+
 }
