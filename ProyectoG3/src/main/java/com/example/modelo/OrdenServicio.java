@@ -29,7 +29,7 @@ public class OrdenServicio {
         return fechaServicio;
     }
 
-    public TipoVehiculo getTipoVehiculo() {
+    public String getTipoVehiculo() {
         return tipoVehiculo;
     }
 

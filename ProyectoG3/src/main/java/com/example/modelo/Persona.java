@@ -1,6 +1,6 @@
 package com.example.modelo;
 
-public class Persona {
+public abstract class Persona {
     protected String identificacion;
     protected String nombre;
     protected String telefono;

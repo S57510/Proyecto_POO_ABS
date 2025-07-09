@@ -9,7 +9,8 @@ public class Servicio{
     public Servicio(String codigo, String nombreS, double precio){
         this.codigo= codigo;
         this.nombreS= nombreS;
-        this.precio= new ArrayList<>();
+        this.precio= precio;
+        this.historialPrecios = new ArrayList<>();
     }
 
     public void agregarServicio(String nombre, double precio) {
@@ -20,7 +21,7 @@ public class Servicio{
         //
     }
 public String toString() {
-        return "Servicio {Codigo: " + codigo + ", Nombre: " + nombre + ", Precio: " + precio + "}";
+        return "Servicio {Codigo: " + codigo + ", Nombre: " + nombreS + ", Precio: " + precio + "}";
     }
 
 

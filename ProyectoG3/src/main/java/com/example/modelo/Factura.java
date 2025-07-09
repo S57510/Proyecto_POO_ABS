@@ -8,7 +8,7 @@ public class Factura {
     private OrdenServicio ordenServicio;
     private List<DetalleOrden> detalles;
 
-    public Factura (String codigo, String fecha){
+    public Factura (String codigo, String fechaF, OrdenServicio ordenServicio){
         this.codigo = codigo;
         this.fechaF = fechaF;
         this.ordenServicio = ordenServicio;
@@ -45,7 +45,7 @@ public class Factura {
     }
 }
 
-    public String mostrarFactura (){
+    public void mostrarFactura (){
 
     }
 

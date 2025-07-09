@@ -3,9 +3,11 @@ package com.example.modelo;
 public class Cliente extends Persona{
 
     private boolean cliente;
+    private String direccion;
 
     public Cliente(String identificacion, String nombre, String direccion, String telefono, boolean tipoCliente) {
-        super(identificacion, nombre, telefono, direccion);
+        super(identificacion, nombre, telefono);
+        this.direccion= direccion;
         this.cliente = tipoCliente;
     }
 

@@ -1,9 +1,9 @@
 package com.example.modelo;
 
-public class Proovedor extends Persona{
+public class Proveedor extends Persona{
     private String descripcion;
 
-    public Prooverdor(String nombre, String identificacion, String telefono, String descripcion) {
+    public Proveedor(String nombre, String identificacion, String telefono, String descripcion) {
         super(identificacion, nombre, telefono);
         this.descripcion = descripcion;
     }
