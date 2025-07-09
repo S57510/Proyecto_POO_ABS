@@ -1,6 +1,6 @@
-package com.example;
+package com.example.Vista;
 
-import controlador.Controlador;
+import com.example.controlador.Controlador;
 import java.util.Scanner;
 
 public class Main {

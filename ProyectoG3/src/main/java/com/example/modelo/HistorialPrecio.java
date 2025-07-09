@@ -1,6 +1,6 @@
 package com.example.modelo;
 
-    public class HistoialPrecio{
+    public class HistorialPrecio{
         private double precio;
         private String fechaInicio;
         private String fechaFin;

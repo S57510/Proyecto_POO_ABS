@@ -3,14 +3,13 @@ package com.example.modelo;
 import java.util.ArrayList;
 public class IngresoServicio {
     private String fechaIngreso;
-    private List<OrdenServicio> ordenesServicio;
+    private ArrayList<OrdenServicio> ordenesServicio;
 
     public IngresoServicio() {
         this.ordenesServicio = new ArrayList<>();
     }
-}
-
-public String getFechaIngreso() {
+    
+    public String getFechaIngreso() {
         return fechaIngreso;
     }
 
@@ -18,10 +17,11 @@ public String getFechaIngreso() {
         this.fechaIngreso = fechaIngreso;
     }
 
-    public List<OrdenServicio> getOrdenesServicio() {
+    public ArrayList<OrdenServicio> getOrdenesServicio() {
         return ordenesServicio;
     }
 
     public String mostrarIngresoS (String fecha){
         return fecha;
     }
+}

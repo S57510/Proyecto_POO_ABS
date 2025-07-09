@@ -1,16 +1,17 @@
 package com.example.modelo;
- 
+import java.util.ArrayList;
+
 public class Servicio{
     private String codigo;
-    private String nombreS;
+    private String nombre;
     private double precio;
     private ArrayList<HistorialPrecio> historialPrecios;
 
-    public Servicio(String codigo, String nombreS, double precio){
+    public Servicio(String codigo, String nombre, double precio){
         this.codigo= codigo;
-        this.nombreS= nombreS;
+        this.nombre= nombre;
         this.precio= precio;
-        this.historialPrecios = new ArrayList<>();
+        this.historialPrecios = new ArrayList<HistorialPrecio>();
     }
 
     public void agregarServicio(String nombre, double precio) {
@@ -21,7 +22,7 @@ public class Servicio{
         //
     }
 public String toString() {
-        return "Servicio {Codigo: " + codigo + ", Nombre: " + nombreS + ", Precio: " + precio + "}";
+        return "Servicio {Codigo: " + codigo + ", Nombre: " + nombre + ", Precio: " + precio + "}";
     }
 
 

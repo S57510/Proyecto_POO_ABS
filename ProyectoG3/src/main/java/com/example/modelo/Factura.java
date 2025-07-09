@@ -43,11 +43,11 @@ public class Factura {
     public String toString() {
         return "Factura {codigo: " + codigo + ", fechaF: " + fechaF + "}";
     }
-}
 
     public void mostrarFactura (){
 
     }
+}
 
 
 
