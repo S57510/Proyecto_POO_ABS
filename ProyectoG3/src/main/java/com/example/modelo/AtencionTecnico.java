@@ -1,11 +1,8 @@
 package com.example.modelo;
 
-import java.util.ArrayList;
-import java.util.List;
 public class AtencionTecnico {
     private String fechaT;
     private Tecnico tecnico;
-}
 
 public AtencionTecnico(String fechaT, Tecnico tecnico) {
         this.fechaT = fechaT;
@@ -28,9 +25,11 @@ public AtencionTecnico(String fechaT, Tecnico tecnico) {
         this.tecnico = tecnico;
     }
 
-public String mostrarAtencionT() {
-}
+    public String mostrarAtencionT() {
+        return "Fecha de atención: " + fechaT + ", Técnico: " + tecnico;
+    }
 
-public String toString() {
-        return "AtencionTecnico{" + "fecha='" + fechaT +", tecnico=" + tecnico.getNombre()
+    public String toString() {
+    return "AtencionTecnico{" + "fecha='" + fechaT +", tecnico=" + tecnico.getNombre() + "}";
+    }
 }
