@@ -22,7 +22,7 @@ public class Main {
             System.out.println("8. Salir");
             System.out.print("Seleccione una opción e ingrese el número: ");
 
-            int opcion = sc.nextInt();
+            opcion = sc.nextInt();
             sc.nextLine(); 
 
             switch (opcion) {
