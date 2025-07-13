@@ -2,25 +2,39 @@ package com.example.modelo;
 
 public class Cliente extends Persona{
 
-    private boolean cliente;
+    private TipoCliente tipoCliente;
     private String direccion;
 
-    public Cliente(String identificacion, String nombre, String direccion, String telefono, boolean tipoCliente) {
+    public Cliente(String identificacion, String nombre, String direccion, String telefono, TipoCliente tipoCliente) {
         super(identificacion, nombre, telefono);
         this.direccion= direccion;
-        this.cliente = tipoCliente;
+        this.tipoCliente = tipoCliente;
     }
 
+    @override
     public String toString(){
         return "Cliente{ "+super.toString()+ 
-               "\ncliente: " + cliente + " }";
+               "\ncliente: " + TipoCliente + " }";
     }
 
-    public void mostrarDatos() {
-        System.out.println(this.toString());
+
+
+    public boolean ESEmpresarial(){
+        return this.tipoCliente == TipoCliente.EMPRESARIAL;
+    } 
+    //getters y setters
+    public TipoCliente getTipoCliente() {
+        return tipoCliente;
     }
 
-    public void agregarCliente(String identificacion, String nombre, String direccion, String telefono, boolean tipoCliente){
-        // agregar a la lista de clientes
+    public void setTipoCliente(TipoCliente tipoCliente) {
+        this.tipoCliente = tipoCliente;
+    }
+
+    public String getDireccion(){
+        return direccion;
+    }
+    public void setDireccion(String direccion ) {
+        this.tipoCliente = tipoCliente;
     }
 }

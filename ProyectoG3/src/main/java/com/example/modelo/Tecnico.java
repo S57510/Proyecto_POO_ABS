@@ -18,6 +18,7 @@ public class Tecnico extends Persona {
  }
 
 public String mostrarInformacionCompleta() {
-        return "Tecnico:" + super.toString() + "Especialidad: " + especialidad;
+        String datos = super.toString();
+        return datos + String.format("%-10s", especialidad);
     }
 }

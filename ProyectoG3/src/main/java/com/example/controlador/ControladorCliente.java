@@ -1,9 +1,9 @@
 package com.example.controlador;
 import java.util.Scanner;
 import java.util.ArrayList
-import project.modelo.Cliente;
-import project.modelo.TipoCliente;
-import project.vista.MensajeUsuario;
+import com.example.modelo.Cliente;
+import com.example.modelo.TipoCliente;
+import com.example.vista.MensajeUsuario;
 
 
 public class ControladorCliente {

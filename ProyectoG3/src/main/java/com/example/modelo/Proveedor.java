@@ -9,15 +9,15 @@ public class Proveedor extends Persona{
     }
 
     public String toString(){
-        return "Proovedor{ "+super.toString()+ 
-               "\ndescripcion " + descripcion + " }";
+        return "Proovedor{ "+super.toString()+ String.format("%-10s", this.descripcion); " }";
     }
 
-    public void mostrarDatos(){
-        System.out.println(this.toString());
-    }
+   public String getDescripcion() {
+      return this.descripcion;
+   }
 
-    public void agregarProovedor(String identificacion, String nombre, String telefono, String descripcion){
-        // agregar a la lista de proovedores
-    }   
+   public void setDescripcion(String descripcion) {
+      this.descripcion= descripcion ;
+   }
+  
 }

@@ -1,7 +1,7 @@
 package com.example.vista;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+
 import java.util.Scanner;
 import project.controlador.ControladorCliente;
 import project.modelo.Cliente;
@@ -20,7 +20,6 @@ public class VistaCliente {
       System.out.println("*****Administrar cliente******");
       System.out.println("1) Agregar Cliente");
       System.out.println("2) Regresar al menú principal");
-      System.out.println("3) Regresar al menú principal");
       System.out.print("Seleccione una opción: ");
       opcion =sc.nextInt();
       sc.nextLine();
