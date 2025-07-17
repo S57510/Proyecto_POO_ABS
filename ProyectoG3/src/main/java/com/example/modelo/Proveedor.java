@@ -9,7 +9,7 @@ public class Proveedor extends Persona{
     }
 
     public String toString(){
-        return "Proovedor{ "+super.toString()+ String.format("%-10s", this.descripcion); " }";
+        return "Proovedor{ "+super.toString()+ String.format("%-10s", this.descripcion)+ " }";
     }
 
    public String getDescripcion() {

@@ -15,16 +15,15 @@ public class Servicio{
     }
 
     public void agregarServicio(String nombre, double precio) {
-        //
-    }
-    //editar por codigo
-    public void editarServicio(String codigo) { 
-        //
-    }
-public String toString() {
-        return "Servicio {Codigo: " + codigo + ", Nombre: " + nombre + ", Precio: " + precio + "}";
+        //agregar un nuevo servicio
     }
 
+    public void editarServicio(String codigo) { 
+        //editar un servicio existente por su codigo
+    }
+    public String toString() {
+        return "Servicio {Codigo: " + codigo + ", Nombre: " + nombre + ", Precio: " + precio + "}";
+    }
 
     public String getCodigo() {
         return codigo;

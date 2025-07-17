@@ -11,13 +11,11 @@ public class Cliente extends Persona{
         this.tipoCliente = tipoCliente;
     }
 
-    @override
+    @Override
     public String toString(){
         return "Cliente{ "+super.toString()+ 
-               "\ncliente: " + TipoCliente + " }";
+               "\ncliente: " + tipoCliente + " }";
     }
-
-
 
     public boolean ESEmpresarial(){
         return this.tipoCliente == TipoCliente.EMPRESARIAL;
@@ -35,6 +33,6 @@ public class Cliente extends Persona{
         return direccion;
     }
     public void setDireccion(String direccion ) {
-        this.tipoCliente = tipoCliente;
+        this.direccion = direccion;
     }
 }

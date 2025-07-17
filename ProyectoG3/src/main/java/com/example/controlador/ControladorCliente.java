@@ -1,6 +1,6 @@
 package com.example.controlador;
 import java.util.Scanner;
-import java.util.ArrayList
+import java.util.ArrayList;
 import com.example.modelo.Cliente;
 import com.example.modelo.TipoCliente;
 import com.example.vista.MensajeUsuario;

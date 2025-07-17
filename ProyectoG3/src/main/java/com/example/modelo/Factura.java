@@ -45,10 +45,6 @@ public class Factura {
     }
 
     public void mostrarFactura (){
-
+        System.out.println(this.toString());
     }
 }
-
-
-
-
