@@ -1,10 +1,9 @@
-package com.example.vista;
-
+package com.example.Vista;
 import java.util.ArrayList;
 import java.util.Scanner;
-import com.example.controlador.ControladorCliente;
-import com.example.modelo.Cliente;
-import com.example.modelo.TipoCliente;
+import com.example.controlador.ControladorTecnico;
+
+import com.example.modelo.Tecnico;
 
 public class VistaTecnico {
    ControladorTecnico controlador;
@@ -40,11 +39,11 @@ public class VistaTecnico {
 
     //elimina
    public void eliminarTecnico(Scanner sc) {
-      scanner.nextLine();
+      sc.nextLine();
       System.out.println("Ingrese la identificación del técnico: ");
       String identificacion = sc.nextLine();
       System.out.println("¿Está seguro que desea eliminar el registro? (Si/No):");
-      String respuesta = sc.nextLine().toUpperCase;
+      String respuesta = sc.nextLine().toUpperCase();
       if (respuesta.equals("Si")) {
          MensajeUsuario mensaje = this.controlador.eliminarTecnico(identificacion);
          if (mensaje != null) {
@@ -76,9 +75,8 @@ public class VistaTecnico {
                         tecnico.getEspecialidad());
             }
         }
-   }
 
    public void mostrarMensaje(String m) {
       System.out.println(m);
    }
-
+}

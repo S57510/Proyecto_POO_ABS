@@ -1,14 +1,13 @@
 package com.example.controlador;
-import java.util.Scanner;
 import java.util.ArrayList;
 import com.example.modelo.Cliente;
 import com.example.modelo.TipoCliente;
-import com.example.vista.MensajeUsuario;
+import com.example.Vista.MensajeUsuario;
 
 
 public class ControladorCliente {
-   private ArrayList<Cliente> clientes = new ArrayList();
-
+   private ArrayList<Cliente> clientes = new ArrayList<Cliente>();
+   
    public ControladorCliente() {
    }
 
@@ -18,7 +17,8 @@ public class ControladorCliente {
             return cliente;
         }
       }
-
+      return null;
+   }
 
    public MensajeUsuario agregarCliente(String identificacion, String nombre, String direccion, String telefono, TipoCliente tipoCliente) {
       if (buscarCliente(identificacion) == null) {
@@ -33,5 +33,5 @@ public class ControladorCliente {
    public ArrayList<Cliente> getClientes() {
       return this.clientes;
    }
-}
+
 }
